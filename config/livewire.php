@@ -2,7 +2,7 @@
 
 return [
     'temporary_file_upload' => [
-        'disk' => env('LIVEWIRE_TEMPORARY_FILE_UPLOAD_DISK'),
+        'disk' => env('LIVEWIRE_TEMPORARY_FILE_UPLOAD_DISK', 'public'),
         'rules' => ['required', 'file', 'max:2097152'],
         'directory' => null,
         'middleware' => null,
