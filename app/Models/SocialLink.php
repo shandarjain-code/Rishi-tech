@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class SocialLink extends Model
+{
+    protected $guarded = [];
+
+    protected $casts = [
+        'is_active' => 'boolean',
+    ];
+
+    public const PLATFORMS = [
+        'instagram' => 'Instagram',
+        'facebook' => 'Facebook',
+        'linkedin' => 'LinkedIn',
+        'whatsapp' => 'WhatsApp',
+        'freelancer' => 'Freelancer.com',
+    ];
+}
