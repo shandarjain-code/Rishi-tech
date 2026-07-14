@@ -18,8 +18,7 @@ class AboutForm
                 TextInput::make('main_heading_second'),
                 Textarea::make('description')
                     ->columnSpanFull(),
-                FileUpload::make('profile_image')
-                    ->image(),
+                FileUpload::make('profile_image'),
             ]);
     }
 }
