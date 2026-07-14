@@ -2,9 +2,9 @@
 
 return [
     'temporary_file_upload' => [
-        'disk' => env('LIVEWIRE_TEMPORARY_FILE_UPLOAD_DISK'),
+        'disk' => 'livewire-tmp',
         'rules' => ['required', 'file', 'max:2097152'],
-        'directory' => null,
+        'directory' => '/',
         'middleware' => null,
         'preview_mimes' => [
             'mp4', 'm4v', 'mov', 'webm', 'ogg', 'ogv', 'avi', 'wmv', 'mkv', 'flv',
